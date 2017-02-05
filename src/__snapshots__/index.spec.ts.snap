@@ -1,0 +1,14 @@
+exports[`servie-redirect should send redirects 1`] = `
+Object {
+  "body": undefined,
+  "bytesTransferred": 0,
+  "finished": false,
+  "headers": Object {
+    "location": "/test",
+  },
+  "started": false,
+  "status": 302,
+  "statusText": undefined,
+  "trailers": Object {},
+}
+`;

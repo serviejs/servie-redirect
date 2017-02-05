@@ -1,0 +1,64 @@
+{
+  "name": "servie-redirect",
+  "version": "0.0.0",
+  "description": "Redirects for Servie",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\"",
+    "build": "rm -rf dist/ && tsc",
+    "specs": "jest --coverage",
+    "test": "npm run -s lint && npm run -s build && npm run -s specs",
+    "prepublish": "typings install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/node-servie-redirect.git"
+  },
+  "keywords": [
+    "servie",
+    "redirect",
+    "http",
+    "301",
+    "302"
+  ],
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/node-servie-redirect/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/node-servie-redirect",
+  "devDependencies": {
+    "jest": "^18.1.0",
+    "rimraf": "^2.5.4",
+    "throwback": "^2.0.0",
+    "ts-jest": "^18.0.2",
+    "tslint": "^4.3.1",
+    "tslint-config-standard": "^3.0.0",
+    "typescript": "^2.1.5",
+    "typings": "^2.1.0"
+  },
+  "dependencies": {
+    "@types/escape-html": "0.0.19",
+    "escape-html": "^1.0.3",
+    "servie": "^0.2.0"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest/preprocessor.js"
+    },
+    "testRegex": "src/.*\\.(?:test|spec)\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  }
+}
