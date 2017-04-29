@@ -17,7 +17,7 @@ export function redirect (req: Request, url: string, status = 302): Response {
 
   if (req.type === 'text/html') {
     const u = escapeHtml(location)
-    res.body = `<p>Redirecting to <a href=${u}>${u}</a>.</p>`
+    res.body = `<p>Redirecting to <a href="${u}">${u}</a>.</p>`
   } else if (req.type === 'text/plain') {
     res.body = `Redirecting to ${location}.`
   }
