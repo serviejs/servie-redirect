@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json --type-check",
     "build": "rm -rf dist/ && tsc",
     "specs": "jest --coverage",
     "test": "npm run -s lint && npm run -s build && npm run -s specs",
