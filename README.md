@@ -6,7 +6,7 @@
 [![Test coverage](https://img.shields.io/coveralls/serviejs/servie-redirect.svg?style=flat)](https://coveralls.io/r/serviejs/servie-redirect?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/serviejs/servie-redirect.svg)](https://greenkeeper.io/)
 
-> Redirects for Servie - a thin layer for creating a `Response` object.
+> URL redirection for Servie - a thin layer for creating a `Response` object with appropriate body/status.
 
 ## Installation
 
@@ -18,13 +18,10 @@ npm install servie-redirect --save
 
 ```ts
 import { redirect } from 'servie-redirect'
-import { compose } from 'throwback'
-import { get } from 'servie-route'
 
-const app = compose(
-  redirect(),
-  get('/foo', ...)
-)
+function handle (req) {
+  return redirect(req, '/goto')
+}
 ```
 
 ## TypeScript
