@@ -1,10 +1,10 @@
 # Servie Redirect
 
-[![NPM version][npm-image]][npm-url]
-[![NPM downloads][downloads-image]][downloads-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/node-servie-redirect.svg)](https://greenkeeper.io/)
+[![NPM version](https://img.shields.io/npm/v/servie-redirect.svg?style=flat)](https://npmjs.org/package/servie-redirect)
+[![NPM downloads](https://img.shields.io/npm/dm/servie-redirect.svg?style=flat)](https://npmjs.org/package/servie-redirect)
+[![Build status](https://img.shields.io/travis/serviejs/servie-redirect.svg?style=flat)](https://travis-ci.org/serviejs/servie-redirect)
+[![Test coverage](https://img.shields.io/coveralls/serviejs/servie-redirect.svg?style=flat)](https://coveralls.io/r/serviejs/servie-redirect?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/serviejs/servie-redirect.svg)](https://greenkeeper.io/)
 
 > Redirects for Servie - a thin layer for creating a `Response` object.
 
@@ -34,12 +34,3 @@ This project is written using [TypeScript](https://github.com/Microsoft/TypeScri
 ## License
 
 Apache 2.0
-
-[npm-image]: https://img.shields.io/npm/v/servie-redirect.svg?style=flat
-[npm-url]: https://npmjs.org/package/servie-redirect
-[downloads-image]: https://img.shields.io/npm/dm/servie-redirect.svg?style=flat
-[downloads-url]: https://npmjs.org/package/servie-redirect
-[travis-image]: https://img.shields.io/travis/blakeembrey/node-servie-redirect.svg?style=flat
-[travis-url]: https://travis-ci.org/blakeembrey/node-servie-redirect
-[coveralls-image]: https://img.shields.io/coveralls/blakeembrey/node-servie-redirect.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/blakeembrey/node-servie-redirect?branch=master
