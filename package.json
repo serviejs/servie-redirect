@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json --type-check",
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json",
     "build": "rm -rf dist/ && tsc",
     "specs": "jest --coverage",
     "test": "npm run -s lint && npm run -s build && npm run -s specs",
@@ -36,19 +36,25 @@
   },
   "homepage": "https://github.com/serviejs/servie-redirect",
   "devDependencies": {
-    "jest": "^19.0.0",
+    "@types/escape-html": "0.0.20",
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.0.8",
+    "jest": "^22.4.3",
     "rimraf": "^2.5.4",
+    "servie": "^3.0.0",
+    "servie-finalhandler": "^1.1.0",
     "throwback": "^2.0.0",
-    "ts-jest": "^19.0.0",
-    "tslint": "^5.0.0",
-    "tslint-config-standard": "^5.0.0",
-    "typescript": "^2.2.1",
+    "ts-jest": "^22.4.5",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.8.3",
     "typings": "^2.1.0"
   },
+  "peerDependencies": {
+    "servie": "^3.0.0"
+  },
   "dependencies": {
-    "@types/escape-html": "0.0.19",
-    "escape-html": "^1.0.3",
-    "servie": "^0.2.0"
+    "escape-html": "^1.0.3"
   },
   "jest": {
     "transform": {

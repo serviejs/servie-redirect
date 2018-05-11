@@ -4,7 +4,6 @@
 [![NPM downloads](https://img.shields.io/npm/dm/servie-redirect.svg?style=flat)](https://npmjs.org/package/servie-redirect)
 [![Build status](https://img.shields.io/travis/serviejs/servie-redirect.svg?style=flat)](https://travis-ci.org/serviejs/servie-redirect)
 [![Test coverage](https://img.shields.io/coveralls/serviejs/servie-redirect.svg?style=flat)](https://coveralls.io/r/serviejs/servie-redirect?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/serviejs/servie-redirect.svg)](https://greenkeeper.io/)
 
 > URL redirection for Servie - a thin layer for creating a `Response` object with appropriate body/status.
 
