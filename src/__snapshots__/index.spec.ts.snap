@@ -1,23 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`servie-redirect should send redirects 1`] = `
-Object {
-  "body": Object {
-    "bodyUsed": false,
-    "buffered": true,
-    "hasBody": true,
-    "headers": Object {
+Response {
+  "$rawBody": "<p>Redirecting to <a href=\\"/test\\">/test</a>.</p>",
+  "headers": Headers {
+    "object": Object {
       "content-length": "48",
-      "content-type": "text/plain",
+      "content-type": "text/html",
+      "location": "/test",
     },
   },
-  "bytesTransferred": 0,
-  "finished": false,
-  "headers": Object {
-    "location": "/test",
-  },
-  "started": false,
-  "statusCode": 302,
-  "statusMessage": undefined,
+  "status": 302,
+  "statusText": "",
+  "trailer": Promise {},
 }
 `;

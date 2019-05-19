@@ -5,7 +5,7 @@
 [![Build status](https://img.shields.io/travis/serviejs/servie-redirect.svg?style=flat)](https://travis-ci.org/serviejs/servie-redirect)
 [![Test coverage](https://img.shields.io/coveralls/serviejs/servie-redirect.svg?style=flat)](https://coveralls.io/r/serviejs/servie-redirect?branch=master)
 
-> URL redirection for Servie - a thin layer for creating a `Response` object with appropriate body/status.
+> Simple URL redirection for Servie - thin layer for creating a `Response` with body and status code.
 
 ## Installation
 
@@ -16,10 +16,10 @@ npm install servie-redirect --save
 ## Usage
 
 ```ts
-import { redirect } from 'servie-redirect'
+import { redirect } from "servie-redirect";
 
-function handle (req) {
-  return redirect(req, '/goto')
+function handle(req) {
+  return redirect(req, "/goto");
 }
 ```
 
